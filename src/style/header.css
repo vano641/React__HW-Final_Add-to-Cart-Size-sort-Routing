@@ -1,0 +1,148 @@
+
+/* Для всего документа */
+/* @charset "UTF-8"; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .toptop {
+  overflow: hidden;
+} */
+/* .................................. */
+
+.navigate {
+  padding-top: 18px;
+  padding-bottom: 19px;
+  height: 75px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 869px;
+  background: #222;
+  position: relative;
+}
+.navigate__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 41px;
+}
+.navigate__right {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+
+.burger-menu {
+  /* Меню при наведении */
+}
+.burger-menu #burger {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+.burger-menu #burger:checked ~ .burger-menu__menu {
+  right: -232px;
+}
+.burger-menu__menu {
+  z-index: 4;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  padding-top: 32px;
+  width: 232px;
+  height: auto;
+  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: right 0.3s;
+}
+.burger-menu__h5 {
+  margin-left: 32px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+.burger-menu__items {
+  margin-left: 32px;
+  display: grid;
+  grid-template-columns: 126px;
+  grid-template-rows: 130px 163px 196px;
+  gap: 20px;
+}
+.burger-menu__h6 {
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #f16d7f;
+}
+.burger-menu__list {
+  list-style: none;
+  margin-left: 21px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6f6e6e;
+}
+.burger-menu li {
+  margin-bottom: 9px;
+}
+
+
+@media (max-width: 1024px) {
+    .navigate {
+        gap: 443px;
+    }
+}
+
+
+/* Мобилка */
+@media (max-width: 767px) {
+    img {
+        max-width: 100%;
+    }
+
+    .center {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .navigate {
+        gap: 150px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+  .navigate__left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navigate__right_img {
+    display: none;
+  }
+  .burger-menu #burger:checked ~ .burger-menu__menu {
+    right: -100%;
+  }
+  .burger-menu__menu {
+    width: 100%;
+  }
+}

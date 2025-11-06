@@ -1,0 +1,59 @@
+.feature {
+  padding-top: 103px;
+  padding-bottom: 104px;
+  background-color: #222224;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: 134px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 30px;
+}
+.feature__items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.feature__h5 {
+  margin-top: 28px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 19px;
+  color: #fbfbfb;
+}
+.feature__h5-center {
+  margin-top: 19px;
+}
+.feature__h5-right {
+  margin-top: 25px;
+}
+.feature__p {
+  width: 290px;
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+/* Планшет */
+@media (max-width: 1024px) {
+    .feature {
+        padding-top: 48px;
+        padding-bottom: 64px;
+        grid-template-columns: 360px;
+        grid-template-rows: repeat(3, 134px);
+        gap: 48px;
+        justify-items: center;
+    }
+}
+
+/* Мобилка */
+@media (max-width: 767px) {
+    .feature {
+        padding-bottom: 81px;
+        gap: 46px;
+    }
+}

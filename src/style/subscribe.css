@@ -1,0 +1,147 @@
+.subscribe {
+  background-image: url(../img/subscribe/subscribe_img_background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 327px;
+}
+
+.subscribe__info {
+  margin-top: 97px;
+  margin-bottom: 126px;
+  text-align: center;
+}
+.subscribe__info_p {
+  max-width: 360px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #222224;
+  font-style: italic;
+}
+
+.subscribe__form {
+  margin-top: 150px;
+  margin-bottom: 156px;
+}
+.subscribe__form_h3-text {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.subscribe__form_header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 167%;
+  text-align: center;
+  color: #222224;
+}
+.subscribe__form_text {
+  font-weight: 400;
+  font-size: 18px;
+}
+.subscribe__form_button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe__form_input {
+  width: 72%;
+  height: 49px;
+  padding-left: 22px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border: none;
+  background-color: #E1E1E1;
+  font-weight: 400;
+  font-size: 14px;
+  color: #222224;
+  opacity: 0.67;
+}
+.subscribe__form_submit {
+  height: 49px;
+  width: 28%;
+  padding-left: 17px;
+  padding-right: 22px;
+  border: none;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  background-color: #fff;
+  color: #f16d7f;
+  transition: background-color 0.3s ease-in-out;
+}
+.subscribe__form_submit:hover {
+  background-color: #f16d7f;
+  color: #fff;
+}
+
+/* Планшет */
+@media (max-width: 1024px) {
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 48px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .subscribe__info {
+        margin-top: 64px;
+        margin-bottom: 0;
+    }
+    .subscribe__form {
+        margin-top: 0;
+        margin-bottom: 140px;
+    }
+    .subscribe__form_h3-text {
+        margin-bottom: 27px;
+    }
+}
+
+/* Мобилка */
+@media (max-width: 767px) {
+    img {
+        max-width: 100%;
+    }
+    .center {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .subscribe__info_p {
+        font-size: 18px;
+    }
+    .subscribe__form {
+        margin-bottom: 109px;
+    }
+    .subscribe__form_header {
+        line-height: 153%;
+    }
+    .subscribe__form_text {
+        font-size: 14px;
+    }
+    .subscribe__form_button {
+        margin-left: 17px;
+        margin-right: 17px;
+        flex-wrap: nowrap;
+    }
+    .subscribe__form_submit {
+        width: auto;
+    }
+}

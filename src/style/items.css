@@ -1,0 +1,150 @@
+.items-top {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.items {
+  background: #f8f8f8;
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+.items__img {
+  width: 100%;
+  height: auto;
+}
+
+.items__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.items:hover .items__overlay {
+  opacity: 1;
+}
+
+.items__add-to-cart-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+    margin-block: 73%;
+    margin-inline: 20%;
+
+    padding-top: 15px;
+    padding-right: 57px;
+    padding-bottom: 14px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3a3838;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    border: solid;
+    border-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.items__add-to-cart-btn:hover {
+  background-color: #fff;
+  color: #3a3838;
+}
+.items__add-to-cart-btn:hover path {
+  fill: #3a3838;
+}
+
+.items__cart-img {
+    padding-left: 24px;
+    /* color: #3a3838; */
+}
+
+.items:hover .items__add-to-cart-btn {
+  opacity: 0.5;
+}
+
+.items__heading-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 16px;
+}
+.items__h5 {
+  font-weight: 400;
+  font-size: 13px;
+  color: #000;
+}
+.items__p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #5d5d5d;
+  max-width: 315px;
+}
+.items__price {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f16d7f;
+}
+
+.browse-button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 48px;
+  margin-bottom: 95px;
+}
+.browse-button__text {
+  padding: 15px 39px;
+  border-style: solid;
+  border-color: #f26376;
+  background: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f26376;
+  /* Наведение на кнопку */
+}
+.browse-button__text:hover {
+  background: #f16d7f;
+  color: #fff;
+}
+
+
+/* Планшет */
+@media (max-width: 1024px) {
+    .items-top {
+        gap: 16px;
+    }
+
+    .browse-button {
+        margin-top: 32px;
+        margin-bottom: 65px;
+    }
+}
+
+/* Мобилка */
+@media (max-width: 767px) {
+    .items-top {
+        gap: 16px;
+    }
+
+    .browse-button {
+        margin-top: 40px;
+        margin-bottom: 96px;
+    }
+}
