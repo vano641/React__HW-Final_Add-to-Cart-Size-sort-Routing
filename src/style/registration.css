@@ -1,0 +1,154 @@
+.registration {
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+.registration__form-field {
+  display: flex;
+  flex-direction: row;
+  gap: 128px;
+}
+.registration__form-box {
+  display: flex;
+  gap: 0;
+}
+.registration__input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__heading {
+  margin-bottom: 20px;
+}
+
+.registration__help-text {
+  margin-top: 15px;
+  margin-bottom: 39px;
+  width: 360px;
+  font-weight: 300;
+  font-size: 13px;
+  color: #6f6e6e;
+  text-align: start;
+}
+.registration__button {
+  padding: 16px 29px 17px;
+  display: flex;
+  gap: 20px;
+  color: #f16d7f;
+  background-color: white;
+  border-style: solid;
+  border-color: #f16d7f;
+}
+.registration__button:hover {
+  background-color: #f16d7f;
+  color: white;
+}
+.registration__button:hover path {
+  fill: white;
+}
+
+.radio-button {
+  margin-top: 31px;
+  margin-bottom: 33px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.radio-button__box {
+  display: flex;
+  gap: 10px;
+}
+.radio-button__label {
+  font-weight: 300;
+  font-size: 11px;
+  color: #000;
+}
+.radio-button__round {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #a4a4a4;
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin: 0;
+}
+.radio-button__round:checked {
+  background-color: #f16d7f;
+  border-color: #f16d7f;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.registration-info {
+  width: 652px;
+}
+.registration-info__heading-h2 {
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+}
+.registration-info__p {
+  margin-top: 22px;
+  margin-bottom: 21px;
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+}
+.registration-info__list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.registration-info__list-item {
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+  list-style-type: none;
+}
+.registration-info__img {
+  margin-right: 23px;
+}
+.registration-info li {
+  margin: 0;
+}
+
+/* Планшет */
+@media (max-width: 1024px) {
+    .registration {
+        margin-top: 40px;
+    }
+    .registration__form-field {
+        gap: 22px;
+    }
+    .registration-info__heading-h2 {
+        font-size: 16px;
+    }
+    .registration-info__p {
+        margin-top: 32px;
+        font-size: 16px;
+    }
+    .registration-info__list {
+        gap: 26px;
+    }
+    .registration-info__list-item {
+        font-size: 16px;
+    }
+}
+
+/* Мобилка */
+@media (max-width: 767px) {
+    .registration__form-field {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .registration-info {
+        width: 358px;
+    }
+}

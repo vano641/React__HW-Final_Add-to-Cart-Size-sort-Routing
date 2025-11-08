@@ -1,0 +1,141 @@
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+.slider__arrow {
+  border: 1px;
+  padding: 13px 17px;
+  background-color: #D8D8D8;
+}
+.slider__arrow:hover path {
+  fill: #f16d7f;
+}
+
+.collection {
+  max-width: 1141px;
+  margin-bottom: 128px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #EAEAEA;
+}
+.collection__women {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.collection__h3 {
+  font-weight: 300;
+  font-size: 14px;
+  color: #f16d7f;
+}
+.collection__h2 {
+  font-weight: 300;
+  font-size: 18px;
+  color: #4d4d4d;
+}
+.collection__p {
+  margin-top: 48px;
+  margin-bottom: 32px;
+  max-width: 555px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  color: #5e5e5e;
+}
+.collection__price {
+  width: 642px;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 64px;
+  margin-bottom: 64px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  color: #ef5b70;
+}
+.collection__choose {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+}
+.collection__arrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+.collection__arrow_h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6f6e6e;
+}
+.collection__button {
+  margin-top: 48px;
+  padding-top: 15px;
+  padding-right: 57px;
+  padding-bottom: 14px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f26376;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  border: solid;
+  border-color: #FF6A6A;
+  transition: background-color 0.3s ease-in-out;
+}
+.collection__button:hover {
+  background-color: #f16d7f;
+  color: white;
+}
+.collection__button:hover path {
+  fill: white;
+}
+.collection__cart-img {
+  padding-left: 24px;
+  color: #ef5b70;
+}
+
+/* Мобилка */
+@media (max-width: 767px) {
+    .slider__img {
+        width: 280px;
+    }
+
+    .collection {
+        margin-bottom: 64px;
+    }
+    .collection__p {
+        width: 326px;
+        line-height: 143%;
+        text-align: center;
+    }
+    .collection__price {
+        width: 175px;
+        line-height: 130%;
+    }
+    .collection__button {
+        margin-top: 64px;
+    }
+    .collection__choose {
+        gap: 25px;
+    }
+    .collection__arrow_h3 {
+        font-size: 10px;
+    }
+}
